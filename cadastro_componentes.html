@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel = "stylesheet" href = "main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>UFC - Sigaa - Sistema Integrado de Gestão de Atividades Acadêmicas</header>
@@ -14,24 +17,28 @@
         <a href="historico.html"> Histórico </a>
     </nav>   
 
-    <h1>Cadastro de componentes curriculares</h1>
+    <h1 style="font-family: 'Oswald', sans-serif;"> Cadastro de componentes curriculares </h1>
+
+    <div style="background-color: #394674">
+        <form name = "Cadastro de Componentes" action="painel_controle.html" method = "POST">
+            <span id="Login"><h3>Preencha o formulário de cadastro:</h3></span>
+            <br>
+            <span id="Login"><label for="username">Nome da Atividade:</label></span>
+            <span id="Login"><input required type="text" name="username"/></span>
+            <span id="Login"><label for="horas" name="horas">Horas realizadas:</label></span>
+            <span id="Login"><input required type="number" name="horas"></span>
+            <span id="Login"><label for="date" name="horas">Data:</label></span>
+            <span id="Login"><input required type="date" name="date"></span>
+            <span id="Login"><label for="email" name="email">E-mail do responsável:</label></span>
+            <span id="Login"><input required type="email" name="email"></span>
+            <span id="Login"><label for="number" name="number">Telefone do responsável:</label></span>
+            <span id="Login"><input required type="number" name="number"></span>
+            <br>
+            <span id="Login"><input required type="submit" value="OK"></span>
+        </form>
+    </div>
+
     <br>
-    <form name = "Cadastro de Componentes" action="painel_controle.html" method = "POST">
-        <h3>Preencha o formulário de cadastro:</h3>
-        <br>
-        <label for="username">Nome da Atividade:</label>
-        <input required type="text" name="username"/>
-        <label for="horas" name="horas">Horas realizadas:</label>
-        <input required type="number" name="horas">
-        <label for="date" name="horas">Data:</label>
-        <input required type="date" name="date">
-        <label for="email" name="email">E-mail do responsável:</label>
-        <input required type="email" name="email">
-        <label for="number" name="number">Telefone do responsável:</label>
-        <input required type="number" name="number">
-        <br>
-        <input required type="submit" value="OK">
-    </form>
     
     <footer>SIGAA | Copyright © 2010-2022 - Superintendência de Tecnologia da Informação - UFC - (85) 3366-9999 - si3asprd03.ufc.br</footer>
 </body>

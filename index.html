@@ -3,20 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Novo sigaa</title>
-    <h1>Entrar no Sistema</h1>
     <link rel = "stylesheet" href = "main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>UFC - Sigaa - Sistema Integrado de Gestão de Atividades Acadêmicas</header>
 
-    <form name = "form_login" action = "painel_controle.html" method = "POST">
+    <h1 style="font-family: 'Oswald', sans-serif;"> Entrar no Sistema </h1>
 
-        Usuário: <input type = "text" name = "usuario" value = ""><br />
-        Senha: <input type = "password" name = "senha" value = ""><br />
-        <input type = "submit" value = "OK">
-        
-    </form>
+    <div style="background-color: #394674">
+        <form name = "form_login" action = "painel_controle.html" method = "POST">
+
+            <span id="Login">Usuário: </span> <input type = "text" name = "usuario" value = "">
+            <span id="Login">Senha: </span> <input type = "password" name = "senha" value = "">
+            <input type = "submit" value = "OK">
+            
+        </form>
+    </div>
 
     <footer>SIGAA | Copyright © 2010-2022 - Superintendência de Tecnologia da Informação - UFC - (85) 3366-9999 - si3asprd03.ufc.br</footer>
 </body>
-</html>
+</html> 
